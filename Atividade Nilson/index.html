@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Login Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="login-title">Login</h1>
+        
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required aria-describedby="username-help">
+                <div id="username-help" class="screen-reader-only">Digite seu nome de usuário</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required aria-describedby="password-help">
+                <div id="password-help" class="screen-reader-only">Digite sua senha</div>
+            </div>
+            
+            <button type="submit" id="login-button">Entrar</button>
+        </form>
+        
+        <div class="accessibility-panel">
+            <h2>Opções de Acessibilidade</h2>
+            
+            <div class="font-size-options">
+                <button id="font-small" aria-label="Texto pequeno">A-</button>
+                <button id="font-normal" aria-label="Texto normal">A</button>
+                <button id="font-large" aria-label="Texto grande">A+</button>
+                <button id="font-xlarge" aria-label="Texto extra grande">A++</button>
+            </div>
+            
+            <div class="accessibility-options">
+                <button id="high-contrast" aria-label="Alto contraste">Alto Contraste</button>
+                <button id="normal-view" aria-label="Visualização normal">Normal</button>
+            </div>
+            
+            <div class="accessibility-options">
+                <button id="deuteranopia" aria-label="Modo para deuteranopia (deficiência para verde)">Deuteranopia</button>
+                <button id="protanopia" aria-label="Modo para protanopia (deficiência para vermelho)">Protanopia</button>
+                <button id="tritanopia" aria-label="Modo para tritanopia (deficiência para azul)">Tritanopia</button>
+            </div>
+            
+            <div class="color-blind-info">
+                <p>Os modos de daltonismo ajustam as cores para melhor distinção por pessoas com diferentes tipos de deficiência de visão de cores.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
